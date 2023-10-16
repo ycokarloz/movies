@@ -8,16 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @SpringBootApplication
-@RestController
 public class MoviesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
 
-	@GetMapping(value="/")
-	public String apiRoot() {
-		return "Hello World!";
-	}
-	
 }
